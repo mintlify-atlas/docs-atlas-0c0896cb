@@ -1,0 +1,91 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "Turath SDK",
+  "projectDescription": "JavaScript SDK for accessing Arabic and Islamic books from turath.io",
+  "theme": "palm",
+  "primaryColor": "#8B6F47",
+  "lightColor": "#D4A574",
+  "darkColor": "#5C4A2E",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/overview",
+              "concepts/error-handling"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/fetching-books",
+              "guides/fetching-authors",
+              "guides/fetching-pages",
+              "guides/searching"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Functions",
+            "pages": [
+              "api/get-author",
+              "api/get-book-file",
+              "api/get-book-info",
+              "api/get-page",
+              "api/search"
+            ]
+          },
+          {
+            "group": "Types",
+            "pages": [
+              "api/types/author-api-response",
+              "api/types/book-api-response",
+              "api/types/book-file-api-response",
+              "api/types/page-result",
+              "api/types/search-results",
+              "api/types/search-options"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Fetch book metadata and full content",
+    "Retrieve author biographies",
+    "Access specific pages with metadata",
+    "Search across the turath.io catalog with filters",
+    "TypeScript support with full type definitions"
+  ],
+  "publicApiSurface": [
+    "getAuthor(id: number)",
+    "getBookFile(id: number)",
+    "getBookInfo(id: number)",
+    "getPage(bookId: number, pageNumber: number)",
+    "search(query: string, options?: SearchOptions)",
+    "SortField enum",
+    "SearchOptions type",
+    "SearchResult type",
+    "SearchResults type",
+    "PageMetadata type",
+    "PageResult type",
+    "AuthorApiResponse type",
+    "BookApiResponse type",
+    "BookFileApiResponse type"
+  ]
+}
